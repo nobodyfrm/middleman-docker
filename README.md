@@ -1,6 +1,8 @@
 # Middleman im Docker-Container
 
-Start: `docker run -p LOCALPORT:4567 -it --name CONTAINERNAME -v /middleman nobodyfrm/middleman  /bin/bash`
+Image erstellen: `docker build -t nobodyfrm/middleman .`
+
+Start eines Containers mit dem Image: `docker run -p LOCALPORT:4567 -it --name CONTAINERNAME -v /middleman nobodyfrm/middleman  /bin/bash`
 
 Ersetze LOCALPORT mit dem Port, unter welchem der Container auf dem Host zugänglich sein soll. CONTAINERNAME ist ein frei wählbarer Name, um später auf diesen besser zugreifen zu können. Wenn man den Parameter weglässt, wird automatisch einer zugewiesen.
 
